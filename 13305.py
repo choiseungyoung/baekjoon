@@ -1,0 +1,25 @@
+import sys
+input=sys.stdin.readline
+N=int(input())
+arr=list(map(int,input().split()))
+arr2=list(map(int,input().split()))
+i=0
+j=0
+count=0
+arr3=[]
+c=arr[0]*arr2[0]
+arr3.append(c)
+while(True):
+    if(j>=N-2):
+        break
+    a=arr2[count+1]*arr[j+1]   
+    b=arr2[i]*arr[j+1]   
+    if(a>b):
+        arr3.append(b)
+        j+=1
+    else:
+        arr3.append(a)
+        j+=1
+        i=count+1
+    count+=1
+print(sum(arr3))
