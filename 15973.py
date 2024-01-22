@@ -40,13 +40,6 @@ def lineing(arr,arr2):
     if(arr[1]==arr2[3]):
         return 1
                 
-def faceing(arr,arr2):
-    if(arr==arr2):
-        return 1
-    if(arr[0]<arr2[0] and arr2[0]<arr[2]):
-        return 1
-    elif(arr[0]<arr2[2] and arr2[2]<arr[2]):
-        return 1
     
 def nulling(arr,arr2):
     if(arr[2]<arr2[0]):
