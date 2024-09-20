@@ -13,7 +13,7 @@ for i in range(0,M):
             for k in range(0,(N//6)+1):  
                 if(cost > k*arr[i][0]+ arr[j][1]*(N-(6*k)) ):
                     cost=k*arr[i][0]+ arr[j][1]*(N-(6*k))
-                print(cost)    
+                   
             if(mincost> cost):
                 mincost=cost
             
@@ -23,7 +23,7 @@ for i in range(0,M):
             for k in range(0,(N//6)+1):
                 if(cost > k*arr[i][0]+ arr[j][1]*(N-(6*k)) ):
                     cost=k*arr[i][0]+ arr[j][1]*(N-(6*k))
-                print(cost)
+             
                 if(mincost> cost):
                     mincost=cost
             
