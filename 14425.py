@@ -1,20 +1,21 @@
 import sys
 input=sys.stdin.readline
 N,M=map(int,input().split())
-arr =[]
-arr2 = []
+s=set()
+arr2 = [0]*M
+
 for i in range(N):
-    arr.append(input())
+    s.add(input())
 for j in range(M):
-    arr2.append(input())
+    arr2[j]=input()    
+
 
 count=0
 
-for index in arr:
-    for index1 in arr2:
-        if(index==index1):
-            count+=1
-            break
+for index in arr2:
+    if index in s:
+        count+=1
+
             
 print(count)
 
