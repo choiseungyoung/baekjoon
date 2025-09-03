@@ -1,15 +1,12 @@
 N,L=map(int,input().split())
 
-arr=list(range(0,N))
-index=0
-print(arr)
-for i in range(1,len(arr)):
-    for j in range(2,100):    
-        arr[i]=arr[i]+arr[i-1]
-        
-        if((arr[i]==N) and j>=L):
-            index=i
+for i in range(L,101):
+    x=N/i-(i+1)/2
+    if int(x) ==x:
+        x=int(x)
+        if x+1>=0:
+            for j in range(x+1,x+i+1):
+                print(j,end=" ")
             break
-        elif(arr[i]!=N):
-            break
-        print(arr)
+else:
+    print(-1)
